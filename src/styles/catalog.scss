@@ -1,0 +1,43 @@
+.catalog {
+    overflow-x: hidden;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding-bottom: 40px;
+    }
+
+    .catalog__list {
+        display: flex;
+        gap: 4px;
+
+        .catalog__item {
+
+
+            .catalog__link {
+                display: block;
+                padding: 10px 13px 12px 13px;
+                background-color: #EEEFF2;
+                border: 1px solid #EEEFF2;
+                border-radius: 32px;
+                align-content: center;
+                line-height: 120%;
+                color: #969EAE;
+
+                &.catalog__link-active {
+                    border: 1px solid #0044F0;
+                    background-color: #0044F0;
+                    color: #FFFFFF;
+                }
+
+                &:hover {
+                    border: 1px solid #0044F0;
+                    color: #0044F0;
+                }
+            }
+        }
+    }
+}

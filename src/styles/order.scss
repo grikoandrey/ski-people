@@ -1,0 +1,112 @@
+.order {
+    margin: 32px 0 60px 0;
+    color: #1c1c1c;
+
+    .order__container {
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 24px 16px;
+        border: 1px solid #EEEFF2;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        box-sizing: border-box;
+
+        @media screen and (min-width: 768px) {
+            max-width: 710px;
+            gap: 12px;
+            padding: 60px 151px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            max-width: 726px;
+            padding: 60px 159px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            max-width: 832px;
+            padding: 60px 212px;
+        }
+
+        .order__title {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 16px;
+            font-weight: 400;
+
+            .order__title-name {
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            @media screen and (min-width: 768px) {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 8px;
+                font-size: 20px;
+                font-weight: 400;
+
+                .order__title-name {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .order__id {
+            padding: 4px 8px;
+            background-color: #EEEFF2;
+            border-radius: 32px;
+            width: fit-content;
+        }
+
+        .order__info {
+            padding-top: 12px;
+            padding-bottom: 16px;
+
+            .order__info-title {
+                font-size: 16px;
+                margin-bottom: 12px;
+                font-weight: 400;
+            }
+
+            .order__info-table {
+                width: 100%;
+
+                .order__table-row {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #EEEFF2;
+
+                    .order__table-item {
+                        color: #969eae;
+                        padding: 8px 0;
+
+                        &:last-child {
+                            color: #1c1c1c;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .order__info-button {
+            background-color: #0044F0;
+            border: 1px solid #0044F0;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 32px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+
+            &:hover {
+                background-color: #ffffff;
+                color: #0044f0;
+            }
+        }
+    }
+}
