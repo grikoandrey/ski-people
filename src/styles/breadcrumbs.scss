@@ -1,0 +1,36 @@
+.breadcrumbs {
+    .breadcrumbs__navigation {
+        .breadcrumbs__list {
+            display: flex;
+            gap: 6px;
+
+            .breadcrumbs__item {
+                display: flex;
+                align-items: center;
+
+                .breadcrumbs__link {
+                    color: #969EAE;
+
+                    &:hover {
+                        color: #0044F0;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 7px;
+                    height: 7px;
+                    margin-left: 6px;
+                    background-image: url('./images/bread-arrow.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                &:last-child::after {
+                    content: none;
+                }
+            }
+        }
+    }
+}
